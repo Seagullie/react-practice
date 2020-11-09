@@ -3,7 +3,7 @@ A practice project. Technologies used: React, Redux, Materialize
 
 <p>Includes two simple apps (todo and calculator) and a simple game of Tic Tac Toe</p>
 
-<p>Redux makes it easy to store component state so that it doesn't reset as the components get changed</p>
+<p>Redux makes it easy to store component state so that it doesn't reset as the components get unmounted</p>
 <p>Materialize to give the page a decent look</p>
 <p>For the actual page you can go <a href="https://seagullie.github.io/">here</a></p>
 
