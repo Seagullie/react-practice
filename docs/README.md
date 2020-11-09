@@ -11,6 +11,7 @@ A practice project. Technologies used: React, Redux, Materialize
 
 <img src='tic-tac-toe.png'/>
 <hr/>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
