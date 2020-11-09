@@ -7,7 +7,7 @@ A practice project. Technologies used: React, Redux, Materialize
 <p>Materialize to give the page a decent look</p>
 <p>For the actual page you can go <a href="https://seagullie.github.io/">here</a></p>
 
-
+<hr/>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
