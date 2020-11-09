@@ -1,0 +1,11 @@
+.ghost-task{
+    opacity: 0.5;
+}
+
+.todos{
+    user-select: none;
+}
+
+.todos .todo{
+    cursor: pointer;
+}

@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+
+        body{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+        #field{
+            margin: 0;
+        }
+
+        #game{
+            color: inherit;
+        }
+
+        .grid{
+            min-height: 55vh;
+            min-width: 55vh;
+            display:grid;
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .gridCell{
+            border-right: 1px solid rgba(0,0,0,0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gridCell:hover{
+            background-color: rgba(0,0,0,0.12);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .circle, .cross{
+            height: 65%;
+            width: 65%;
+        }
+
+        .grid .gridRow .gridCell:last-child{
+            border-right: 0;
+        }
+
+        .gridRow{
+            display: grid;
+            border-bottom: 1px solid rgba(0,0,0,0.12);
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .grid .gridRow:last-child{
+            border-bottom: 0;
+        }
+
+        .game-controls li a i {
+            line-height: unset;
+            color: black;
+        }
+
+        .gameHeader{
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game" >
+        <div class="gameHeader">
+            <h1 class="blue-text center">Tic Tac Toe</h1>
+            <p class="grey-text lighten-2">Turn of Player <i class="material-icons right black-text">close</i></p>
+        </div>
+        
+        <div id="field" class="card">
+            <div class="grid card-body">
+                <div class="gridRow">
+                    <div class="gridCell"><img src="svgs/close.svg" class = "cross">
+                    </div>
+                    <div class="gridCell"><img src="svgs/circle.svg" class = "circle"></div>
+                    <div class="gridCell"></div>
+                </div>
+                <div class="gridRow">
+                    <div class="gridCell"></div>
+                    <div class="gridCell"></div>
+                    <div class="gridCell"></div>
+                </div>
+                <div class="gridRow">
+                    <div class="gridCell"></div>
+                    <div class="gridCell"></div>
+                    <div class="gridCell"></div>
+                </div>
+
+            </div>
+    
+            <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width game-controls">
+                  <li class="tab"><a class="active" href="#"><i class="material-icons">refresh</i></a></li>
+                  <li class="tab" title="Decrease Field Size"><a class="active" href="#"><i class="material-icons">unfold_less</i></a></li>
+                  <li class="tab" title="Increase Field Size"><a class="active" href="#"><i class="material-icons">unfold_more</i></a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+</body>
+</html>

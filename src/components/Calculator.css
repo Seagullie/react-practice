@@ -1,0 +1,88 @@
+:root{
+    --scale-factor: 1.75;
+}
+
+#calculator-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+
+#calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+
+#calcBody{
+    margin: auto auto;
+}
+
+#panel, #numbers, #operators{
+    display: grid;
+}
+
+#numbers, #operators{
+    gap: 2px;
+}
+
+#numbers{
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr)
+}
+
+#operators{
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr)
+}
+
+#panel{
+    column-gap: 1em;
+    text-align: center;
+}
+
+#panel{
+    grid-template-columns: 70% 1fr;
+    position: relative;
+}
+
+.gridCell{
+    padding: 10px;
+}
+
+.gridCell:hover, #deleteButton:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#equalsSign:hover{
+    color: rgba(0, 255, 255, 0.678);
+}
+#screen{
+    border-bottom: 1px solid lightgray;
+    padding-left: 5px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#screen input {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+#deleteButton{
+    font-size: 0.6em;
+    margin-right: 1em;
+}
+
+#notification{
+    position: absolute;
+    top: 5px;
+    left: 1em;
+    font-size: 0.7rem;
+}

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined");
+
+:root{
+    --application-side-size: 70vh;
+    --main-red: #ee6e73;
+    --main-blue: #2196F3;
+}
+
+.brand-logo .badge{
+    margin-top: 10px;
+}
+
+.App, main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.App{
+    height: 100vh;
+}
+
+
+
+nav .active{
+    transition: all 0.5s;
+    background-color: rgba(0,0,0,0.1)
+}
+
+main{
+    flex-grow: 1;
+    width: 100%;
+}
+
+nav{
+    flex-shrink: 0;
+}
+
+main > *{
+    max-width: var(--application-side-size);
+    max-height: var(--application-side-size);
+}
+
+/* i have set the height of .App element to 100vh
+and now i'm trying to make it so that the second child of the element takes up all available space
+and that's possible with a little bit of flexbox (flex-grow: 1)
+ */
